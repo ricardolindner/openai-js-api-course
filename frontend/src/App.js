@@ -1,7 +1,8 @@
-import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import './App.css';
 import Home from './screens/Home';
-import Stream from "./screens/Stream";
-import './styles/bootstrap-custom.scss';
+import PDFSummary from './screens/PDFSummary/PDFSummary';
+import Stream from './screens/Stream';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           } />
           <Route path="/stream" element={
             <Stream />
+          } />
+          <Route path="/pdfsummary" element={
+            <PDFSummary />
           } />
         </Routes>
       </Router>
